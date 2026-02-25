@@ -6,7 +6,7 @@
   {{ $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
   {{ $desc := .Description | default (.Summary | plainify | truncate 155) | default "Banunu Blog - chia sẻ về công nghệ, AI, nghề dev và đời sống theo góc nhìn thực dụng." }}
   {{ $url := .Permalink }}
-  {{ $ogImage := "/og/home-hero-preview.jpg?v=20260226a" | absURL }}
+  {{ $ogImage := "/og/home-hero-preview.jpg?v=20260226b" | absURL }}
   <title>{{ $title }}</title>
   <meta name="description" content="{{ $desc }}">
   <meta name="robots" content="index,follow">
