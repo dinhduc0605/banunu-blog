@@ -8,7 +8,7 @@ description = 'AI đang thay đổi nghề dev, nhưng không theo cách nhiều
 
 Mình nghĩ nghề dev trong 3-5 năm tới sẽ không biến mất. Nhưng nó sẽ đổi form rất mạnh.
 
-Đổi ở đâu? Không phải ở chuyện “có còn viết code hay không”. Mà là ở câu hỏi: **ai chịu trách nhiệm khi hệ thống chạy sai?**
+Đổi ở đâu? Không phải ở chuyện “có còn viết code hay không”. Mà là ở câu hỏi: **ai chịu trách nhiệm khi hệ thống chạy sai?** 🎯
 
 ## 1) AI đang tăng tốc thật, nhưng không phải mọi nơi đều tăng
 
@@ -45,7 +45,7 @@ Team có thể tăng số PR, tăng tốc merge, nhưng đồng thời:
 - bug hậu kỳ tăng
 - thời gian debug production tăng
 
-Nếu chỉ đo output ngắn hạn (số dòng code, số PR), ta rất dễ tưởng là tốt lên.
+Nếu chỉ đo output ngắn hạn (số dòng code, số PR), ta rất dễ tưởng là tốt lên 📈.
 
 Mình thích một nguyên tắc đơn giản: đo cả tốc độ lẫn chất lượng.
 Ít nhất nên theo dõi thêm bug rate, rollback rate, và thời gian xử lý sự cố.
@@ -64,7 +64,7 @@ Dev tương lai là “viết ít hơn nhưng quyết định khó hơn”.
 
 ## 5) Góc nhìn cá nhân của mình
 
-Mình không bi quan về nghề dev. Mình cũng không lạc quan mù quáng.
+Mình không bi quan về nghề dev. Mình cũng không lạc quan mù quáng 🙂.
 
 Mình tin 3 điều:
 

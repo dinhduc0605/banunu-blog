@@ -6,11 +6,11 @@ categories = ['Tech']
 description = 'Góc nhìn thực tế: agent coding 48 giờ liên tục có gì đáng dùng cho dev/team nhỏ ở Việt Nam?'
 +++
 
-Nếu gần đây bạn thấy cụm "AI agent viết code thay dev" xuất hiện liên tục, thì Cursor Cloud Agents là một ví dụ rất đáng theo dõi.
+Nếu gần đây bạn thấy cụm "AI agent viết code thay dev" xuất hiện liên tục, thì Cursor Cloud Agents là một ví dụ rất đáng theo dõi 👀.
 
 Điểm khác biệt không chỉ là "gợi ý code", mà là chuyển sang kiểu **giao việc theo đầu mục** rồi để agent tự chạy trong môi trường riêng (VM), tự code, tự test, tự mở PR.
 
-Vấn đề là: cái này có thực sự hữu ích cho team nhỏ ở Việt Nam, hay chỉ là marketing?
+Vấn đề là: cái này có thực sự hữu ích cho team nhỏ ở Việt Nam, hay chỉ là marketing? 🤔
 
 ## Cursor Cloud Agents là gì?
 
@@ -30,7 +30,7 @@ Có 3 lý do khiến chủ đề này bùng lên trong cộng đồng dev:
 2. Nhu cầu ship nhanh tăng mạnh, trong khi headcount không tăng tương ứng.
 3. Các agent mới đã bắt đầu đụng được vào workflow thật (PR, test, chỉnh sửa nhiều file).
 
-Nói cách khác, đây không còn là demo "xin đoạn code" nữa, mà là bài toán vận hành.
+Nói cách khác, đây không còn là demo "xin đoạn code" nữa, mà là bài toán vận hành thật 🛠️.
 
 ## Team nhỏ được lợi gì nếu dùng đúng cách?
 
@@ -44,7 +44,7 @@ Nếu dùng đúng phạm vi, team nhỏ có thể được lợi khá rõ:
 
 ## Rủi ro lớn nhất: tưởng nhanh nhưng nợ chất lượng
 
-AI agent càng mạnh thì càng dễ khiến team chủ quan.
+AI agent càng mạnh thì càng dễ khiến team chủ quan ⚠️.
 
 Các rủi ro hay gặp:
 
