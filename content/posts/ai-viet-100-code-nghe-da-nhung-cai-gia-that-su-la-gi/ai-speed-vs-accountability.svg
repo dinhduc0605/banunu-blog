@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="70" y="170" width="500" height="280" rx="20" fill="#0ea5e9" opacity="0.9"/>
+  <rect x="630" y="170" width="500" height="280" rx="20" fill="#f97316" opacity="0.9"/>
+  <text x="320" y="250" text-anchor="middle" font-family="Arial" font-size="44" fill="white" font-weight="700">AI viết nhanh</text>
+  <text x="320" y="310" text-anchor="middle" font-family="Arial" font-size="30" fill="white">Scaffold • Refactor • Test nháp</text>
+  <text x="880" y="250" text-anchor="middle" font-family="Arial" font-size="44" fill="white" font-weight="700">Con người chịu trách nhiệm</text>
+  <text x="880" y="310" text-anchor="middle" font-family="Arial" font-size="30" fill="white">Kiến trúc • Security • Rollback</text>
+  <text x="600" y="95" text-anchor="middle" font-family="Arial" font-size="52" fill="#e2e8f0" font-weight="700">AI viết code 100%?</text>
+  <text x="600" y="145" text-anchor="middle" font-family="Arial" font-size="34" fill="#cbd5e1">Tốc độ có thể giao cho AI, trách nhiệm thì không</text>
+</svg>

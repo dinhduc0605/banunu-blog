@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="section container" style="padding-top:120px;">
+  <h1 class="section-title">Posts</h1>
+  <div class="posts">
+  {{ range .Pages }}
+    <a class="card" href="{{ .RelPermalink }}">
+      <div class="card-body">
+        <div class="meta"><span class="cat">{{ with .Params.tags }}{{ index . 0 }}{{ else }}Blog{{ end }}</span><span>{{ .Date.Format "02/01/2006" }}</span></div>
+        <h3>{{ .Title }}</h3>
+        <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 120 }}{{ end }}</p>
+      </div>
+    </a>
+  {{ end }}
+  </div>
+</section>
+{{ end }}

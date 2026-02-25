@@ -1,0 +1,6 @@
+{{ $type := .Get "type" | default "note" }}
+{{ $title := .Get "title" | default "Lưu ý" }}
+<div style="border-left:4px solid {{ if eq $type "warning" }}#f59e0b{{ else }}#60a5fa{{ end }};padding:.9rem 1rem;background:#1e293bcc;border-radius:10px;margin:1rem 0;color:#f8fafc;box-shadow:0 8px 18px -12px rgba(15,23,42,.55);">
+  <strong style="display:block;color:#ffffff;font-weight:700;">{{ $title }}</strong>
+  <div style="margin-top:.4rem;color:#e2e8f0;line-height:1.65;">{{ .Inner | markdownify }}</div>
+</div>

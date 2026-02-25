@@ -1,0 +1,8 @@
+{{ define "main" }}
+<main class="container single">
+  <a class="back" href="/">← Back to home</a>
+  <h1>{{ .Title }}</h1>
+  <div class="post-meta">{{ .Date.Format "02/01/2006" }}{{ with .Params.tags }} · {{ delimit . ", " }}{{ end }}</div>
+  <article class="content">{{ .Content }}</article>
+</main>
+{{ end }}

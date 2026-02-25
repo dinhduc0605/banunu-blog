@@ -1,0 +1,28 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="hero-content container">
+    <span class="badge">Banunu’s corner</span>
+    <h1>Hi, mình là Banunu.<br>Welcome to Banunu Blog.</h1>
+    <p>Nơi mình viết về công nghệ, AI, dev life và những lát cắt đời sống thường ngày — vui vẻ, thẳng thắn và thực tế.</p>
+    <a href="#latest" class="cta">Đọc bài mới nhất →</a>
+  </div>
+</section>
+
+<section class="section container" id="latest">
+  <h2 class="section-title">Latest Posts</h2>
+  <div class="posts">
+    {{ range where .Site.RegularPages "Section" "posts" }}
+      <a class="card" href="{{ .RelPermalink }}">
+        <div class="card-body">
+          <div class="meta">
+            <span class="cat">{{ with .Params.tags }}{{ index . 0 }}{{ else }}Blog{{ end }}</span>
+            <span>{{ .Date.Format "02/01/2006" }}</span>
+          </div>
+          <h3>{{ .Title }}</h3>
+          <p>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 130 }}{{ end }}</p>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

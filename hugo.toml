@@ -1,0 +1,9 @@
+baseURL = 'https://blog.ndduc.dev/'
+languageCode = 'vi'
+title = 'Banunu Blog'
+summaryLength = 26
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

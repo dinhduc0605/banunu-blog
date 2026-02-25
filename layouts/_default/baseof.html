@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}nddblog - chia sẻ code, công nghệ và cuộc sống{{ end }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#fffaf7;--bg2:#ffffff;--text:#18181b;--muted:#5b6475;--line:#ece7e1;--accent:#7c3aed;--accent-hover:#6d28d9;--accent-soft:rgba(124,58,237,.10)}
+    *{box-sizing:border-box}html,body{margin:0;padding:0} html{-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+    body{font-family:'Archivo',system-ui,-apple-system,'Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none;transition:color .2s ease}
+    a:hover{color:var(--accent-hover)}
+    .container{width:min(1180px,92vw);margin:0 auto}
+
+    .modern-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.84);backdrop-filter:blur(12px);border-bottom:1px solid #f1f1f4}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:700;color:#111827;letter-spacing:.02em}
+    .menu{display:flex;gap:26px;align-items:center}
+    .menu a{font-family:'Space Grotesk',sans-serif;font-size:.82rem;font-weight:600;color:#52525b;text-transform:uppercase;letter-spacing:.07em;position:relative;padding:4px 0}
+    .menu a:after{content:'';position:absolute;left:0;bottom:-4px;height:2px;width:0;background:var(--accent);transition:width .2s ease}
+    .menu a:hover{color:#18181b}.menu a:hover:after{width:100%}
+
+    .hero{min-height:68vh;display:grid;place-items:center;padding:140px 0 78px;position:relative;overflow:hidden;background:linear-gradient(135deg,#fafafa,#fff)}
+    .hero:before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 18% 45%,rgba(124,58,237,.12),transparent 45%),radial-gradient(circle at 82% 80%,rgba(249,115,22,.10),transparent 45%)}
+    .hero-content{position:relative;z-index:1;max-width:840px;text-align:center}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:var(--accent-soft);color:var(--accent);padding:8px 14px;border-radius:999px;font-size:.86rem;font-weight:600;margin-bottom:20px}
+    .hero h1{font-family:'Space Grotesk','Apple Color Emoji','Segoe UI Emoji','Noto Color Emoji',sans-serif;font-size:clamp(2.5rem,6vw,4.2rem);line-height:1.06;margin:0 0 16px;letter-spacing:-.02em}
+    .hero p{font-size:clamp(1rem,2.4vw,1.22rem);color:#52525b;max-width:760px;margin:0 auto}
+    .cta{margin-top:30px;display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;background:linear-gradient(135deg,#7c3aed,#f97316);color:#fff;font-weight:700;transform:translateY(0);transition:all .2s ease;box-shadow:0 10px 24px -12px rgba(124,58,237,.5)}
+    .cta:hover{color:#fff;transform:translateY(-2px) scale(1.01)}
+
+    .section{padding:20px 0 72px}
+    .section-title{font-family:'Space Grotesk',sans-serif;font-size:2rem;margin:0 0 18px}
+    .posts{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+    .card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column;transition:all .25s ease;box-shadow:0 1px 2px rgba(0,0,0,.03);opacity:0;transform:translateY(16px);animation:reveal .55s forwards}
+    .card:nth-child(2n){animation-delay:.06s}.card:nth-child(3n){animation-delay:.12s}.card:nth-child(4n){animation-delay:.18s}
+    @keyframes reveal{to{opacity:1;transform:none}}
+    .card:hover{transform:translateY(-4px);border-color:#c7d2fe;box-shadow:0 12px 24px -12px rgba(79,70,229,.35)}
+    .card-body{padding:18px 18px 20px}
+    .meta{display:flex;justify-content:space-between;gap:10px;font-size:.8rem;color:#71717a;margin-bottom:10px}
+    .cat{background:#f4f4f5;padding:4px 8px;border-radius:999px;font-weight:600;color:#52525b}
+    .card h3{font-family:'Space Grotesk',sans-serif;font-size:1.24rem;line-height:1.35;margin:0 0 8px;color:#111827}
+    .card p{margin:0;color:#52525b;font-size:.97rem}
+
+    .single{padding:110px 0 74px}
+    .back{display:inline-flex;align-items:center;gap:8px;color:#6366f1;font-weight:600;margin-bottom:18px}
+    .single h1{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3.25rem);line-height:1.1;margin:.2rem 0 .8rem}
+    .post-meta{color:#71717a;margin-bottom:24px}
+    .content{font-size:1.08rem;color:#27272a;overflow-wrap:anywhere;word-break:break-word}
+    .content h2,.content h3,.content h4{font-family:'Space Grotesk',sans-serif;color:#111827;line-height:1.25}
+    .content h2{font-size:2rem;margin:2.2rem 0 .9rem}
+    .content h3{font-size:1.55rem;margin:1.7rem 0 .7rem}
+    .content p{margin:.8rem 0}
+    .content a{word-break:break-word;overflow-wrap:anywhere}
+    .content img{max-width:100%;height:auto;border-radius:14px;border:1px solid #e8e8ef;box-shadow:0 12px 30px -18px rgba(0,0,0,.35);transition:transform .25s ease}
+    .content img:hover{transform:translateY(-2px)}
+    .content pre{overflow:auto;padding:14px;border-radius:12px;background:#f4f4f5;border:1px solid #e4e4e7}
+    .content code{font-family:'JetBrains Mono',monospace;font-size:.9em}
+    .content .highlight pre{font-family:'JetBrains Mono',monospace !important;font-size:15px !important;line-height:1.6 !important;-webkit-text-size-adjust:100%;text-size-adjust:100%;}
+    .content .highlight pre code,.content pre code{font-size:inherit !important;line-height:inherit !important;}
+
+    .footer{padding:26px 0 44px;border-top:1px solid #ececf1;color:#71717a;font-size:.9rem}
+
+    @media (max-width:820px){.menu{display:none}.hero{padding-top:120px;min-height:58vh}.container{width:min(1180px,94vw)}.content{font-size:1rem}.single{padding-top:96px}.single h1{font-size:clamp(2rem,9vw,2.6rem);line-height:1.18}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <nav class="modern-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="/">Banunu Blog</a>
+      <div class="menu">
+        <a href="/">Home</a>
+        <a href="/posts/">Posts</a>
+      </div>
+    </div>
+  </nav>
+
+  {{ block "main" . }}{{ end }}
+
+  <footer class="container footer">© {{ now.Year }} nddblog</footer>
+</body>
+</html>
