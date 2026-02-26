@@ -7,6 +7,8 @@ categories = ['Tech']
 
 Dạo gần đây chắc ai làm tech cũng thấy cụm câu này xuất hiện dày đặc: **"AI giờ viết gần hết code rồi"**.
 
+<img src="hero-ai-code-responsibility.png?v=20260226a" alt="Ảnh minh hoạ hero: AI coding và trách nhiệm kỹ thuật của con người" style="display:block;width:100%;height:auto;margin:.6rem 0 1rem;" />
+
 Nghe thì vừa phấn khích 🤩, vừa hơi rén 😅.
 - Phấn khích vì năng suất tăng thật 🚀
 - Rén vì nếu cái gì cũng "AI làm hộ", vậy kỹ năng cốt lõi của dev sẽ đi về đâu?
@@ -15,7 +17,6 @@ Mình đọc khá nhiều thảo luận trên Reddit và các bài viết có tr
 
 > **AI đang thay thế tốc độ gõ code, nhưng chưa thay thế được người chịu trách nhiệm cho hệ thống.**
 
-<img src="ai-speed-vs-accountability.png?v=20260226a" alt="Ảnh minh hoạ: Tốc độ có thể giao cho AI, trách nhiệm thì không." style="display:block;width:100%;height:auto;margin:.5rem 0;" />
 
 ## 1) "AI viết 100% code" là có thật không? 🤔
 
