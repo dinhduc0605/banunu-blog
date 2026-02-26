@@ -1,6 +1,6 @@
 +++
 title = 'Đầu tư thời AI cho người làm tech ở Nhật/VN: đừng all-in trend, hãy all-in vào kỷ luật tài sản'
-date = 2026-02-26T21:25:00+09:00
+date = 2026-02-26T20:45:00+09:00
 tags = ['đầu tư', 'quản lý tài sản', 'AI', 'NISA', 'workflow']
 categories = ['Investment']
 description = 'Góc nhìn thực dụng về đầu tư và quản lý tài sản khi AI đang quá nóng: khung 3 lớp để đi đường dài cho người làm tech ở Nhật và Việt Nam.'
