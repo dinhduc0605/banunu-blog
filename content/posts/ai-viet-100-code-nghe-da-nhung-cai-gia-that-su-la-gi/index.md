@@ -7,6 +7,8 @@ categories = ['Tech']
 
 Dạo gần đây chắc ai làm tech cũng thấy cụm câu này xuất hiện dày đặc: **"AI giờ viết gần hết code rồi"**.
 
+<img src="hero-ai-code-responsibility.png" alt="Ảnh minh hoạ hero: AI coding và trách nhiệm kỹ thuật của con người" style="display:block;width:100%;height:auto;margin:.6rem 0 1rem;" />
+
 Nghe thì vừa phấn khích 🤩, vừa hơi rén 😅.
 - Phấn khích vì năng suất tăng thật 🚀
 - Rén vì nếu cái gì cũng "AI làm hộ", vậy kỹ năng cốt lõi của dev sẽ đi về đâu?
