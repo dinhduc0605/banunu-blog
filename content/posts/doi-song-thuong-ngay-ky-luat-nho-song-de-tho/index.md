@@ -13,7 +13,7 @@ Sau này mới thấy, thứ cứu mình khỏi cảm giác quá tải lại là
 
 Không hoành tráng. Không “hack cuộc đời”. Nhưng làm đều thì cuộc sống dễ thở hơn hẳn.
 
-![Minh hoạ: vài kỷ luật nhỏ giúp ngày thường dễ thở hơn](hero-doi-song.jpg)
+![Minh hoạ: vài kỷ luật nhỏ giúp ngày thường dễ thở hơn](hero-doi-song-banunu.png)
 
 ## 1) Dọn bàn 5 phút trước khi kết thúc ngày
 
