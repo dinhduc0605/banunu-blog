@@ -7,7 +7,7 @@ categories = ['Tech']
 
 Dạo gần đây chắc ai làm tech cũng thấy cụm câu này xuất hiện dày đặc: **"AI giờ viết gần hết code rồi"**.
 
-<img src="hero-ai-code-responsibility.png" alt="Ảnh minh hoạ hero: AI coding và trách nhiệm kỹ thuật của con người" style="display:block;width:100%;height:auto;margin:.6rem 0 1rem;" />
+<img src="hero-ai-code-responsibility.png?v=20260226a" alt="Ảnh minh hoạ hero: AI coding và trách nhiệm kỹ thuật của con người" style="display:block;width:100%;height:auto;margin:.6rem 0 1rem;" />
 
 Nghe thì vừa phấn khích 🤩, vừa hơi rén 😅.
 - Phấn khích vì năng suất tăng thật 🚀
@@ -17,7 +17,7 @@ Mình đọc khá nhiều thảo luận trên Reddit và các bài viết có tr
 
 > **AI đang thay thế tốc độ gõ code, nhưng chưa thay thế được người chịu trách nhiệm cho hệ thống.**
 
-<img src="ai-speed-vs-accountability.png" alt="Ảnh minh hoạ: Tốc độ có thể giao cho AI, trách nhiệm thì không." style="display:block;width:100%;height:auto;margin:.5rem 0;" />
+<img src="ai-speed-vs-accountability.png?v=20260226a" alt="Ảnh minh hoạ: Tốc độ có thể giao cho AI, trách nhiệm thì không." style="display:block;width:100%;height:auto;margin:.5rem 0;" />
 
 ## 1) "AI viết 100% code" là có thật không? 🤔
 
@@ -87,7 +87,7 @@ Con người giữ quyền quyết định ở:
 - rollback strategy
 - trade-off cuối cùng
 
-<img src="mode-a-vs-mode-b.png" alt="Ảnh minh hoạ: Tách rõ mode tăng tốc và mode chịu trách nhiệm." style="display:block;width:100%;height:auto;margin:.5rem 0;" />
+<img src="mode-a-vs-mode-b.png?v=20260226a" alt="Ảnh minh hoạ: Tách rõ mode tăng tốc và mode chịu trách nhiệm." style="display:block;width:100%;height:auto;margin:.5rem 0;" />
 
 Nói dễ nhớ:
 
@@ -103,7 +103,7 @@ Nói dễ nhớ:
 
 Nếu chưa trả lời mạch lạc 5 câu này, mình nghĩ chưa nên merge.
 
-<img src="checklist-5-cau.png" alt="Ảnh minh hoạ: Checklist nhanh trước khi merge." style="display:block;width:100%;height:auto;margin:.5rem 0;" />
+<img src="checklist-5-cau.png?v=20260226a" alt="Ảnh minh hoạ: Checklist nhanh trước khi merge." style="display:block;width:100%;height:auto;margin:.5rem 0;" />
 
 ## Kết 🎯
 
