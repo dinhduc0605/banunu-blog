@@ -10,6 +10,8 @@ Mình nghĩ nghề dev trong 3-5 năm tới sẽ không biến mất. Nhưng nó
 
 Đổi ở đâu? Không phải ở chuyện “có còn viết code hay không”. Mà là ở câu hỏi: **ai chịu trách nhiệm khi hệ thống chạy sai?** 🎯
 
+![Minh hoạ: nghề dev trong kỷ nguyên AI là bài toán trách nhiệm và tư duy hệ thống](hero-nghe-dev-ai.png)
+
 ## 1) AI đang tăng tốc thật, nhưng không phải mọi nơi đều tăng
 
 Có khá nhiều dữ liệu cho thấy AI giúp dev làm nhanh hơn ở nhiều task (viết nháp, boilerplate, scaffold, test khung...).

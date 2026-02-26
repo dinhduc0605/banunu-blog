@@ -12,6 +12,8 @@ Nếu gần đây bạn thấy cụm "AI agent viết code thay dev" xuất hi�
 
 Vấn đề là: cái này có thực sự hữu ích cho team nhỏ ở Việt Nam, hay chỉ là marketing? 🤔
 
+![Minh hoạ: team nhỏ phối hợp với cloud agents để tăng tốc nhưng vẫn kiểm soát chất lượng](hero-cursor-agents.png)
+
 ## Cursor Cloud Agents là gì?
 
 Theo các bài phân tích công khai, Cursor Cloud Agents cho phép bạn chạy nhiều agent song song trên hạ tầng cloud, thay vì phụ thuộc hoàn toàn vào máy local.

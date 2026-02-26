@@ -11,6 +11,8 @@ Không chỉ vì benchmark, mà vì 3 cụm từ rất “đụng việc”: **c
 
 Bài này mình không hype. Mình nhìn theo góc **dev/team nhỏ ở Việt Nam**: có gì dùng được ngay, và nên thử kiểu nào để không đốt thời gian.
 
+![Minh hoạ: đánh giá DeepSeek V4 theo góc nhìn thực dụng của team dev nhỏ](hero-deepseek-v4.png)
+
 ## 1) DeepSeek V4 đang được nhắc đến vì điều gì? 🤔
 
 Theo các bài phân tích gần đây, DeepSeek V4 được nhắc nhiều ở 3 điểm:
