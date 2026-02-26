@@ -70,7 +70,7 @@ Mình dùng checklist 5 câu trước khi tăng tỷ trọng ở bất kỳ tài
 
 Nghe hơi “khô”, nhưng chính mấy câu này cứu mình khỏi các quyết định kiểu “hôm nay thấy ai cũng mua nên mình mua”.
 
-![Minh hoạ: khung 3 lớp tài sản và checklist quyết định trước khi tăng tỷ trọng](framework-3-layers.png)
+![Minh hoạ: khung 3 lớp tài sản và checklist quyết định trước khi tăng tỷ trọng](framework-3-layers-v2.png?v=20260226c)
 
 ## Nhật và Việt Nam: khác môi trường, giống nguyên tắc
 
