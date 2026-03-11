@@ -4,13 +4,14 @@ date = 2026-02-25T21:05:00+09:00
 tags = ['AI', 'Developer', 'Career']
 categories = ['Tech']
 description = 'AI đang thay đổi nghề dev, nhưng không theo cách nhiều người tưởng. Đây là góc nhìn thực dụng của mình.'
+og_image = 'og-hero.jpg?v=20260227og'
 +++
 
 Mình nghĩ nghề dev trong 3-5 năm tới sẽ không biến mất. Nhưng nó sẽ đổi form rất mạnh.
 
 Đổi ở đâu? Không phải ở chuyện “có còn viết code hay không”. Mà là ở câu hỏi: **ai chịu trách nhiệm khi hệ thống chạy sai?** 🎯
 
-![Minh hoạ: nghề dev trong kỷ nguyên AI là bài toán trách nhiệm và tư duy hệ thống](hero-nghe-dev-ai.png)
+![Minh hoạ: nghề dev trong kỷ nguyên AI là bài toán trách nhiệm và tư duy hệ thống](hero-nghe-dev-ai-v2.png?v=20260227c)
 
 ## 1) AI đang tăng tốc thật, nhưng không phải mọi nơi đều tăng
 
@@ -75,6 +76,14 @@ Mình tin 3 điều:
 - Dev không chịu nâng cấp tư duy hệ thống sẽ bị tụt nhanh, dù vẫn “biết dùng tool AI”.
 
 Nghề này chưa chết. Nó chỉ đang buộc chúng ta trưởng thành nhanh hơn.
+
+## 6) Cách luyện năng lực quyết định mỗi tuần
+
+Một cách mình thấy hiệu quả là dành 60-90 phút mỗi tuần cho phiên retrospective cá nhân: chọn 1 PR có AI hỗ trợ, rồi mổ xẻ lại toàn bộ quyết định đã đưa ra. Câu hỏi chính là: quyết định nào do dữ liệu, quyết định nào do thói quen, và quyết định nào bị ảnh hưởng bởi ảo giác đúng từ model.
+
+Làm đều vài tuần, bạn sẽ nhận ra pattern sai lặp lại và nâng chất lượng review nhanh hơn. Đây là lợi thế khó thay thế bằng tool: năng lực tự học từ chính quyết định kỹ thuật của mình.
+
+![Minh hoạ in-body: retrospective giúp dev nâng năng lực quyết định trong thời AI](inbody-nghe-dev-ai-v2.png?v=20260227c)
 
 ## Kết
 

@@ -3,10 +3,48 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {{ $title := cond .IsHome site.Title (printf "%s · %s" .Title site.Title) }}
-  {{ $desc := .Description | default (.Summary | plainify | truncate 155) | default "Banunu Blog - chia sẻ về công nghệ, AI, nghề dev và đời sống theo góc nhìn thực dụng." }}
+  {{ $title := cond .IsHome site.Title (.Title | plainify | truncate 60) }}
+  {{ $rawDesc := .Params.description | default .Params.Description | default .Description | default (.Summary | plainify) | default (.Plain | plainify) | default "Banunu Blog chia sẻ về công nghệ, AI, nghề dev và đời sống theo góc nhìn thực dụng, rõ ràng và có thể áp dụng ngay." }}
+  {{ $descBase := $rawDesc | plainify | replaceRE `\s+` " " | chomp }}
+  {{ $descExtended := cond (lt (len $descBase) 110) (printf "%s %s" $descBase "Bài viết tập trung vào kinh nghiệm thực tế, có nguồn tham khảo và checklist áp dụng nhanh.") $descBase }}
+  {{ $desc := $descExtended | plainify | replaceRE `\s+` " " | chomp | truncate 160 }}
+  {{ if eq $desc "" }}{{ $desc = "Banunu Blog chia sẻ về công nghệ, AI, nghề dev và đời sống theo góc nhìn thực dụng, rõ ràng và có thể áp dụng ngay." | truncate 160 }}{{ end }}
   {{ $url := .Permalink }}
-  {{ $ogImage := "/og/home-hero-preview.jpg?v=20260226c" | absURL }}
+
+  {{ $ogImagePath := "/og/home-hero-preview.jpg?v=20260226c" }}
+  {{ $ogImageAlt := "Banunu Blog homepage preview" }}
+  {{ if .IsPage }}
+    {{ if .Params.og_image }}
+      {{ if or (hasPrefix .Params.og_image "http://") (hasPrefix .Params.og_image "https://") }}
+        {{ $ogImagePath = .Params.og_image }}
+      {{ else if hasPrefix .Params.og_image "/" }}
+        {{ $ogImagePath = .Params.og_image }}
+      {{ else }}
+        {{ $ogImagePath = printf "%s%s" .Permalink .Params.og_image }}
+      {{ end }}
+      {{ $ogImageAlt = printf "Preview image for: %s" .Title }}
+    {{ end }}
+    {{ $raw := .RawContent }}
+    {{ $mdImg := findRE `!\[[^\]]*\]\(([^)]+)\)` $raw 1 }}
+    {{ $htmlImg := findRE `<img[^>]*src="([^"]+)"` $raw 1 }}
+    {{ $first := "" }}
+    {{ if gt (len $mdImg) 0 }}
+      {{ $first = replaceRE `!\[[^\]]*\]\(([^)]+)\)` `$1` (index $mdImg 0) }}
+    {{ else if gt (len $htmlImg) 0 }}
+      {{ $first = replaceRE `<img[^>]*src="([^"]+)"` `$1` (index $htmlImg 0) }}
+    {{ end }}
+    {{ if and (not .Params.og_image) (ne $first "") }}
+      {{ if or (hasPrefix $first "http://") (hasPrefix $first "https://") }}
+        {{ $ogImagePath = $first }}
+      {{ else if hasPrefix $first "/" }}
+        {{ $ogImagePath = $first }}
+      {{ else }}
+        {{ $ogImagePath = printf "%s%s" .Permalink $first }}
+      {{ end }}
+      {{ $ogImageAlt = printf "Preview image for: %s" .Title }}
+    {{ end }}
+  {{ end }}
+  {{ $ogImage := $ogImagePath | absURL }}
   <title>{{ $title }}</title>
   <meta name="description" content="{{ $desc }}">
   <meta name="robots" content="index,follow">
@@ -18,7 +56,7 @@
   <meta property="og:description" content="{{ $desc }}">
   <meta property="og:url" content="{{ $url }}">
   <meta property="og:image" content="{{ $ogImage }}">
-  <meta property="og:image:alt" content="Banunu Blog homepage preview">
+  <meta property="og:image:alt" content="{{ $ogImageAlt }}">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="vi_VN">

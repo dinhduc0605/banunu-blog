@@ -4,6 +4,7 @@ date = 2026-02-26T09:30:00+09:00
 tags = ['Life', 'Productivity', 'Mindset']
 categories = ['Life']
 description = 'Không phải mẹo to tát. Chỉ là vài thói quen nhỏ giúp ngày thường bớt rối và sống nhẹ đầu hơn.'
+og_image = 'og-hero.jpg?v=20260227og'
 +++
 
 Có một giai đoạn mình cứ nghĩ muốn sống tốt thì phải làm điều gì thật lớn.
@@ -80,6 +81,26 @@ Sau đó mình đổi cách nhìn:
 
 Cuộc sống không cần hoàn hảo ngay.
 Chỉ cần bớt tắc ở chỗ đau nhất là đã khác rất nhiều rồi.
+
+## 6) Thêm một lớp kỷ luật: review tuần 15 phút
+
+Ngoài các thói quen hằng ngày, mình thấy một buổi review tuần rất ngắn cũng tạo khác biệt lớn. Cuối tuần, chỉ cần 15 phút để tự hỏi: tuần này điều gì khiến mình mệt nhất, điều gì giúp mình nhẹ đầu nhất, và tuần sau muốn giữ lại đúng một thói quen nào.
+
+Cách này giúp mình không bị cuốn theo cảm xúc từng ngày. Thay vì tự trách bản thân vì chưa hoàn hảo, mình nhìn thấy tiến bộ nhỏ theo thời gian. Đó là kiểu tiến bộ bền: chậm nhưng chắc, và dễ duy trì hơn rất nhiều.
+
+![Minh hoạ in-body: review tuần ngắn giúp duy trì thói quen bền vững](inbody-doi-song.png)
+
+## Nguồn tham khảo
+
+1. James Clear — Habit formation fundamentals  
+   https://jamesclear.com/habits
+2. WHO — Mental health at work  
+   https://www.who.int/news-room/fact-sheets/detail/mental-health-at-work
+3. Stanford Lifestyle Medicine — Behavior change basics  
+   https://lifestylemedicine.stanford.edu/behavior-change.html
+
+
+Một mẹo nữa mình dùng là “reset 5 phút” vào giữa ngày: đứng dậy đi lại, uống nước, hít thở sâu và chốt lại 1 việc quan trọng nhất cho nửa ngày còn lại. Nghe nhỏ thôi nhưng giúp mình kéo lại sự tập trung rất tốt, đặc biệt trong những ngày nhiều việc rời rạc.
 
 ## Kết
 

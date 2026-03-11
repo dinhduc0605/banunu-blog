@@ -4,6 +4,7 @@ date = 2026-02-26T20:00:00+09:00
 tags = ['ai', 'developer', 'workflow', 'career', 'productivity']
 categories = ['Career']
 description = 'AI coding tăng tốc rất nhanh, nhưng lợi thế bền vững của dev vẫn nằm ở khả năng quyết định, kiểm chứng và ship đúng việc.'
+og_image = 'og-hero.jpg?v=20260227og'
 +++
 
 ![Hero - bản đồ đầu tư kỹ năng dev trong thời AI](hero.png?v=20260226b)
@@ -78,7 +79,7 @@ Mình tin vai trò dev không mất đi, mà dịch chuyển:
 - Từ “đúng cú pháp” sang “đúng quyết định”
 - Từ “làm một mình” sang “điều phối AI + con người + quy trình”
 
-Thực tế thị trường vốn và hạ tầng cũng đang đẩy theo hướng đó. OpenAI trong thông báo về Stargate nhấn mạnh quy mô đầu tư hạ tầng AI cực lớn và dài hạn ([OpenAI](https://openai.com/index/announcing-the-stargate-project/)). Khi compute ngày càng sẵn, lợi thế không còn nằm ở “ai có model”, mà nằm ở **ai có năng lực tổ chức công việc và ra quyết định tốt hơn**.
+Thực tế thị trường vốn và hạ tầng cũng đang đẩy theo hướng đó. OpenAI trong thông báo về Stargate nhấn mạnh quy mô đầu tư hạ tầng AI cực lớn và dài hạn ([OpenAI](https://openai.com/news/)). Khi compute ngày càng sẵn, lợi thế không còn nằm ở “ai có model”, mà nằm ở **ai có năng lực tổ chức công việc và ra quyết định tốt hơn**.
 
 ## Kết luận
 
@@ -103,6 +104,6 @@ Nói vui một chút: AI là xe đua mới 🚗💨, nhưng nghề dev vẫn là
 - Hacker News discussion — *Productivity gains from AI coding assistants haven’t budged past 10%*  
   https://news.ycombinator.com/item?id=47077676
 - OpenAI — *Announcing The Stargate Project*  
-  https://openai.com/index/announcing-the-stargate-project/
+  https://openai.com/news/
 - NVIDIA Newsroom — *NVIDIA Announces Financial Results for Fourth Quarter and Fiscal 2026*  
   https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026

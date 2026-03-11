@@ -4,13 +4,14 @@ date = 2026-02-26T00:55:00Z
 tags = ['AI', 'Workflow', 'Developer Productivity', 'Open Source']
 categories = ['Tech']
 description = 'Tin AI chạy quá nhanh, nhưng team dev nhỏ không thể chạy theo tất cả. Đây là workflow thực dụng để thử nghiệm AI mà vẫn giữ chất lượng và trách nhiệm.'
+og_image = 'og-hero.jpg?v=20260227og'
 +++
 
 Tuần nào cũng có “tool mới đổi cuộc chơi”, nhưng thực tế của team nhỏ là: người ít, deadline thật, và chi phí sai lầm thì rất đắt 😅
 
 Mình tổng hợp nhanh từ nhiều nguồn gần đây (TechCrunch, Hacker News, InfoQ, GitHub Blog) và rút ra một workflow chống FOMO để áp dụng ngay.
 
-![Minh hoạ workflow chống FOMO cho team dev nhỏ](hero-workflow-fomo.png)
+![Minh hoạ workflow chống FOMO cho team dev nhỏ](hero-workflow-fomo-v2.png?v=20260227c)
 
 ## Vì sao cần workflow thay vì chạy theo trend
 
@@ -85,6 +86,14 @@ Khi có tool AI mới, mình gợi ý dùng mẫu 4 câu này trong buổi sync:
 4. Khi nào dừng thử nghiệm?
 
 Chỉ cần trả lời rõ 4 câu trên, team sẽ bớt FOMO hẳn 🔧
+
+## 6) Mẫu nhịp họp tuần để chống FOMO
+
+Team nhỏ có thể dùng một nhịp họp 20 phút vào cuối tuần: 5 phút cập nhật tool mới đáng chú ý, 10 phút review kết quả thử nghiệm hiện tại, 5 phút chốt quyết định tuần sau (tiếp tục, mở rộng, hay dừng). Chỉ cần bám nhịp này, team sẽ tránh được việc nhảy tool liên tục theo cảm xúc.
+
+Quan trọng hơn, hãy lưu lại quyết định và lý do. Sau 1-2 tháng, bạn sẽ có dữ liệu nội bộ đủ tốt để biết tool nào thực sự tạo giá trị cho team mình, thay vì chạy theo bài post viral.
+
+![Minh hoạ in-body: nhịp họp tuần giúp team nhỏ ra quyết định AI có kỷ luật](inbody-workflow-fomo-v2.png?v=20260227c)
 
 ## Kết
 

@@ -3,6 +3,8 @@ title = 'AI viết 100% code: Nghe đã, nhưng cái giá thật sự là gì?'
 date = 2026-02-25T15:00:00+09:00
 tags = ['AI', 'Coding', 'Developer', 'Productivity']
 categories = ['Tech']
+description = 'Góc nhìn thực dụng về tuyên bố AI viết 100% code và cách dev giữ trách nhiệm kỹ thuật.'
+og_image = 'og-hero.jpg?v=20260227og'
 +++
 
 Dạo gần đây chắc ai làm tech cũng thấy cụm câu này xuất hiện dày đặc: **"AI giờ viết gần hết code rồi"**.

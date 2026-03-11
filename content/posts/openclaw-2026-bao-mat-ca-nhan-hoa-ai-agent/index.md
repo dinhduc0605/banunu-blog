@@ -4,6 +4,7 @@ date = 2026-02-26T11:00:00+09:00
 tags = ['OpenClaw', 'AI Agent', 'Security', 'MCP']
 categories = ['Tech']
 description = 'OpenClaw gần đây nóng lên không chỉ vì nhiều tính năng mới, mà vì cách dự án đặt bảo mật và kỷ luật vận hành vào trung tâm của personal AI agent.'
+og_image = 'og-hero.jpg?v=20260227og'
 +++
 
 Nếu nhìn bề mặt, OpenClaw có thể trông giống nhiều AI assistant khác: chat, gọi tool, tự động hóa, cron, heartbeat, kết nối nhiều kênh. Nhưng theo mình, lý do OpenClaw “nóng” gần đây lại không nằm ở số lượng feature. Nó nằm ở một chuyện thực tế hơn: dự án này đang chuyển từ tư duy “làm cho chạy được” sang “làm cho chạy an toàn, có kỷ luật”.

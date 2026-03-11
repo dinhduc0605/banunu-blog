@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b132b"/>
+      <stop offset="100%" stop-color="#1c2541"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#243b55"/>
+      <stop offset="100%" stop-color="#141e30"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect x="120" y="120" width="1360" height="660" rx="28" fill="url(#card)" stroke="#3a506b"/>
+  <text x="180" y="210" fill="#d9f0ff" font-size="54" font-family="Inter, Arial" font-weight="700">Checklist 5 tầng quản lý tài sản cho dev thời AI</text>
+  <text x="180" y="260" fill="#9ad1ff" font-size="30" font-family="Inter, Arial">Nhật / Việt Nam • Tăng tốc quyết định, không đánh mất kỷ luật</text>
+
+  <g transform="translate(180,320)">
+    <rect width="1220" height="360" rx="18" fill="#0f1b33" stroke="#345"/>
+    <rect x="40" y="260" width="180" height="60" rx="10" fill="#3ddc97"/>
+    <rect x="250" y="210" width="180" height="110" rx="10" fill="#52b6ff"/>
+    <rect x="460" y="160" width="180" height="160" rx="10" fill="#7aa2ff"/>
+    <rect x="670" y="190" width="180" height="130" rx="10" fill="#52b6ff"/>
+    <rect x="880" y="120" width="180" height="200" rx="10" fill="#3ddc97"/>
+
+    <circle cx="1120" cy="110" r="52" fill="#ffd166"/>
+    <text x="1093" y="121" fill="#1b1b1b" font-size="28" font-family="Inter, Arial" font-weight="700">AI</text>
+  </g>
+
+  <text x="180" y="740" fill="#b9d6ea" font-size="26" font-family="Inter, Arial">Core–Satellite • NISA/Pháp lý • Governance • Monthly Ops</text>
+</svg>

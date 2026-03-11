@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700">
+  <rect width="1200" height="700" fill="#0b132b"/>
+  <text x="60" y="90" fill="#d9f0ff" font-size="44" font-family="Inter, Arial" font-weight="700">Phân bổ Core–Satellite</text>
+
+  <circle cx="420" cy="380" r="220" fill="#1c2541" stroke="#3a506b" stroke-width="2"/>
+  <path d="M420 380 L420 160 A220 220 0 1 1 250 580 Z" fill="#3ddc97"/>
+  <path d="M420 380 L250 580 A220 220 0 0 1 420 160 Z" fill="#52b6ff"/>
+
+  <rect x="760" y="220" width="320" height="90" rx="14" fill="#52b6ff"/>
+  <text x="785" y="275" fill="#001b2e" font-size="34" font-family="Inter, Arial" font-weight="700">Core 70-90%</text>
+  <rect x="760" y="340" width="320" height="90" rx="14" fill="#3ddc97"/>
+  <text x="785" y="395" fill="#001b2e" font-size="34" font-family="Inter, Arial" font-weight="700">Satellite 10-30%</text>
+
+  <text x="60" y="640" fill="#b9d6ea" font-size="28" font-family="Inter, Arial">Nguyên tắc: phần thử nghiệm không được phá vỡ an toàn tài chính tổng thể.</text>
+</svg>

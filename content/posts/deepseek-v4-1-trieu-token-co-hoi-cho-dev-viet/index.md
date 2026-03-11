@@ -4,6 +4,7 @@ date = 2026-02-25T20:30:00+09:00
 tags = ['AI', 'DeepSeek', 'LLM', 'Developer']
 categories = ['Tech']
 description = 'Một góc nhìn thực dụng về DeepSeek V4: dài ngữ cảnh, chi phí và cách pilot cho team nhỏ.'
+og_image = 'og-hero.jpg?v=20260227og'
 +++
 
 Nếu mấy tuần gần đây bạn theo dõi cộng đồng AI thì chắc đã thấy DeepSeek V4 xuất hiện khá nhiều 🔥.  
@@ -11,7 +12,7 @@ Không chỉ vì benchmark, mà vì 3 cụm từ rất “đụng việc”: **c
 
 Bài này mình không hype. Mình nhìn theo góc **dev/team nhỏ ở Việt Nam**: có gì dùng được ngay, và nên thử kiểu nào để không đốt thời gian.
 
-![Minh hoạ: đánh giá DeepSeek V4 theo góc nhìn thực dụng của team dev nhỏ](hero-deepseek-v4.png)
+![Minh hoạ: đánh giá DeepSeek V4 theo góc nhìn thực dụng của team dev nhỏ](hero-deepseek-v4-v2.png?v=20260227b)
 
 ## 1) DeepSeek V4 đang được nhắc đến vì điều gì? 🤔
 
@@ -72,6 +73,14 @@ Nếu muốn thử DeepSeek V4 kiểu an toàn, mình đề xuất pilot gọn:
 - Quyết định: dùng luôn / dùng cho task cụ thể / bỏ
 
 Quan trọng nhất: có số liệu nội bộ của team mình, không chạy theo cảm giác.
+
+## 6) Khi nào nên dùng DeepSeek V4, khi nào không
+
+Theo kinh nghiệm vận hành, DeepSeek V4 sẽ hợp hơn khi bạn cần đọc khối ngữ cảnh dài, tổng hợp tài liệu nội bộ, hoặc xử lý task nghiên cứu trước khi viết code. Với các task yêu cầu độ chính xác cao về business rule, team vẫn nên giữ review thủ công chặt và có test regression rõ ràng.
+
+Điểm quan trọng là đừng đổi toàn bộ stack cùng lúc. Hãy chọn một workload đại diện, đo chi phí và độ ổn định trong 2-3 tuần, rồi mới mở rộng phạm vi. Cách làm này giúp giữ nhịp delivery ổn định trong khi vẫn tận dụng được lợi thế của model mới.
+
+![Minh hoạ in-body: đánh giá model theo chi phí, độ ổn định và chất lượng đầu ra](inbody-deepseek-v4-v2.png?v=20260227a)
 
 ## 5) Kết luận
 
