@@ -1,6 +1,6 @@
 +++
 title = 'DeepSeek V4 vs GPT-5.4: Chọn AI Nào Cho Agentic Workflow?'
-date = 2026-03-14T23:30:00Z
+date = 2026-03-14T22:30:00Z
 tags = ['AI', 'Agentic Workflow', 'GPT-5.4', 'DeepSeek']
 categories = ['Tech']
 description = 'So sánh DeepSeek V4 và GPT-5.4 trong việc xây dựng agentic workflow. Phân tích chi phí, tốc độ và khả năng tự động hoá công việc hiệu quả cho team nhỏ.'
