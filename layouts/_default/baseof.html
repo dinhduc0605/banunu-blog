@@ -23,25 +23,36 @@
         {{ $ogImagePath = printf "%s%s" .Permalink .Params.og_image }}
       {{ end }}
       {{ $ogImageAlt = printf "Preview image for: %s" .Title }}
-    {{ end }}
-    {{ $raw := .RawContent }}
-    {{ $mdImg := findRE `!\[[^\]]*\]\(([^)]+)\)` $raw 1 }}
-    {{ $htmlImg := findRE `<img[^>]*src="([^"]+)"` $raw 1 }}
-    {{ $first := "" }}
-    {{ if gt (len $mdImg) 0 }}
-      {{ $first = replaceRE `!\[[^\]]*\]\(([^)]+)\)` `$1` (index $mdImg 0) }}
-    {{ else if gt (len $htmlImg) 0 }}
-      {{ $first = replaceRE `<img[^>]*src="([^"]+)"` `$1` (index $htmlImg 0) }}
-    {{ end }}
-    {{ if and (not .Params.og_image) (ne $first "") }}
-      {{ if or (hasPrefix $first "http://") (hasPrefix $first "https://") }}
-        {{ $ogImagePath = $first }}
-      {{ else if hasPrefix $first "/" }}
-        {{ $ogImagePath = $first }}
+    {{ else if and .Params.images (gt (len .Params.images) 0) }}
+      {{ $img0 := index .Params.images 0 }}
+      {{ if or (hasPrefix $img0 "http://") (hasPrefix $img0 "https://") }}
+        {{ $ogImagePath = $img0 }}
+      {{ else if hasPrefix $img0 "/" }}
+        {{ $ogImagePath = $img0 }}
       {{ else }}
-        {{ $ogImagePath = printf "%s%s" .Permalink $first }}
+        {{ $ogImagePath = printf "%s%s" .Permalink $img0 }}
       {{ end }}
       {{ $ogImageAlt = printf "Preview image for: %s" .Title }}
+    {{ else }}
+      {{ $raw := .RawContent }}
+      {{ $mdImg := findRE `!\[[^\]]*\]\(([^)]+)\)` $raw 1 }}
+      {{ $htmlImg := findRE `<img[^>]*src="([^"]+)"` $raw 1 }}
+      {{ $first := "" }}
+      {{ if gt (len $mdImg) 0 }}
+        {{ $first = replaceRE `!\[[^\]]*\]\(([^)]+)\)` `$1` (index $mdImg 0) }}
+      {{ else if gt (len $htmlImg) 0 }}
+        {{ $first = replaceRE `<img[^>]*src="([^"]+)"` `$1` (index $htmlImg 0) }}
+      {{ end }}
+      {{ if ne $first "" }}
+        {{ if or (hasPrefix $first "http://") (hasPrefix $first "https://") }}
+          {{ $ogImagePath = $first }}
+        {{ else if hasPrefix $first "/" }}
+          {{ $ogImagePath = $first }}
+        {{ else }}
+          {{ $ogImagePath = printf "%s%s" .Permalink $first }}
+        {{ end }}
+        {{ $ogImageAlt = printf "Preview image for: %s" .Title }}
+      {{ end }}
     {{ end }}
   {{ end }}
   {{ $ogImage := $ogImagePath | absURL }}

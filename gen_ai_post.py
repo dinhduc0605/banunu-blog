@@ -1,16 +1,56 @@
-+++
-title = 'Q&A: Làn sóng sa thải vì AI 2026 và sức mạnh Agentic GPT-5.4'
-date = 2026-03-22T22:50:00+00:00
+import os
+import requests
+import subprocess
+from pathlib import Path
+
+# Config
+post_dir = Path('/home/ubuntu/banunu-blog/content/posts/ai-layoffs-gpt5-4-qa-2026')
+post_dir.mkdir(parents=True, exist_ok=True)
+
+# 1. Download images (Simulating Gemini Banana Pro using Pollinations AI)
+# Style: Minimal flat vector
+hero_prompt = "minimal%20flat%20vector%20illustration%20of%20a%20developer%20looking%20at%20multiple%20floating%20screens%20with%20AI%20nodes%20clean%20lines%20corporate%20colors%20blue%20and%20orange"
+section1_prompt = "minimal%20flat%20vector%20illustration%20of%20a%20human%20and%20robot%20hand%20collaborating%20on%20a%20glowing%20code%20block%20clean%20lines%20corporate%20colors%20blue%20and%20orange"
+section2_prompt = "minimal%20flat%20vector%20illustration%20of%20a%20developer%20climbing%20stairs%20made%20of%20books%20and%20gears%20towards%20a%20bright%20future%20clean%20lines%20corporate%20colors%20blue%20and%20orange"
+
+def download_image(prompt, filename):
+    url = f"https://image.pollinations.ai/prompt/{prompt}?width=1200&height=675&nologo=true"
+    print(f"Downloading {filename}...")
+    try:
+        r = requests.get(url, timeout=30)
+        with open(post_dir / filename, 'wb') as f:
+            f.write(r.content)
+        print(f"Saved {filename}")
+    except Exception as e:
+        print(f"Failed to download {filename}: {e}")
+
+download_image(hero_prompt, 'hero.jpg')
+download_image(section1_prompt, 'section-1.jpg')
+download_image(section2_prompt, 'section-2.jpg')
+
+# Generate OG image
+try:
+    subprocess.run(["convert", str(post_dir / "hero.jpg"), "-resize", "1200x630^", "-gravity", "center", "-extent", "1200x630", "-quality", "85", str(post_dir / "og-image.jpg")], check=True)
+    print("OG image created.")
+except Exception as e:
+    print("Could not run imagemagick convert, just copying hero:", e)
+    import shutil
+    shutil.copy(post_dir / "hero.jpg", post_dir / "og-image.jpg")
+
+# 2. Write Markdown Content
+content = """+++
+title = 'Q&A: Làn sóng sa thải vì AI 2026 và GPT-5.4'
+date = 2026-03-22T23:30:00+00:00
 tags = ['AI', 'Tech News', 'GPT-5.4', 'Career']
 categories = ['Tech']
-description = 'Năm 2026 chứng kiến đợt sa thải khốc liệt từ Oracle, Meta và Atlassian vì AI. Giải đáp 4 câu hỏi lớn giúp dev sống sót trước làn sóng GPT-5.4 Agentic AI.'
+description = 'Năm 2026 chứng kiến hàng loạt cuộc sa thải do AI tự động hóa. Developer cần làm gì trước GPT-5.4 và Agentic AI? Dưới đây là 4 câu hỏi lớn giải đáp thực trạng.'
 +++
 
 Đầu năm 2026, bức tranh ngành công nghệ đang chứng kiến những thay đổi chưa từng có. Không còn là những dự đoán viển vông, "AI thay thế con người" đã chính thức trở thành lý do được các tập đoàn lớn (như Oracle, Block, hay Dow) đưa ra trong các đợt sa thải hàng loạt. Sự ra mắt của GPT-5.4 mini/nano và sự trỗi dậy của "Agentic AI" (AI tự chủ) đã nâng khả năng tự động hóa lên một tầm cao mới.
 
 Vậy, đối mặt với thực tế khốc liệt này, các Developer cần chuẩn bị những gì? Cùng Banunu Blog giải đáp 4 câu hỏi lớn nhất đang gây bão trong cộng đồng.
 
-![Hero Image - Minimal flat vector illustration of a developer looking at AI nodes](hero-v2.jpg)
+![Hero Image - Minimal flat vector illustration of a developer looking at AI nodes](hero.jpg)
 
 ## Q1. Làn sóng sa thải đầu năm 2026 khác gì so với 2023-2024?
 
@@ -28,7 +68,7 @@ Theo [InfoQ](https://www.infoq.com/llms/news/), xu hướng hiện tại không 
 
 GPT-5.4 mini/nano giải quyết bài toán lớn nhất của năm ngoái: **Chi phí và độ trễ (Latency)**. Các mô hình nhỏ gọn này cho phép AI Agents gọi API hàng ngàn lần một phút với chi phí cực rẻ, khiến cho việc tự động hóa các quy trình phần mềm trở nên khả thi về mặt kinh tế đối với mọi công ty, từ startup nhỏ đến các tập đoàn khổng lồ.
 
-![In-body Image - Minimal flat vector illustration of a human and robot hand collaborating](section-1-v2.jpg)
+![In-body Image - Minimal flat vector illustration of a human and robot hand collaborating](section-1.jpg)
 
 ## Q3. Vậy Developer có nguy cơ mất việc hoàn toàn không?
 
@@ -49,12 +89,24 @@ Nếu bạn đang lo lắng, hãy lập tức áp dụng 3 nguyên tắc sau:
 2. **Học cách sử dụng "Agentic Workflow":** Bắt đầu xây dựng các công cụ CLI hoặc scripts cá nhân kết hợp nhiều API của các mô hình khác nhau. Đừng chỉ xài ChatGPT như một chatbot, hãy xài nó như một cỗ máy xử lý dữ liệu hàng loạt.
 3. **Mở rộng sang các lĩnh vực hẹp (Niche):** AI học từ dữ liệu đại trà trên internet. Nếu bạn am hiểu sâu về một ngách nhỏ hoặc một công nghệ độc quyền mà trên internet có ít tài liệu, AI sẽ không thể thay thế bạn.
 
-![In-body Image - Minimal flat vector illustration of a developer climbing stairs made of books](section-2-v2.jpg)
+![In-body Image - Minimal flat vector illustration of a developer climbing stairs made of books](section-2.jpg)
 
-## Summary
+## Summary (Tóm lược)
 
 Làn sóng sa thải đầu năm 2026 là hồi chuông cảnh tỉnh khắc nghiệt: Công nghệ không chờ đợi bất kỳ ai. Sự ra mắt của GPT-5.4 mini/nano và mô hình Agentic AI đã xóa sổ khái niệm "Coder thợ gõ". 
 
 Tuy nhiên, trong mọi cuộc khủng hoảng đều ẩn chứa cơ hội. Bằng cách chủ động chuyển mình từ "Người thực thi" sang "Kiến trúc sư hệ thống" và "Người quản trị AI", bạn không những có thể giữ vững vị trí của mình mà còn nắm bắt được những cơ hội nghề nghiệp giá trị cao nhất trong lịch sử ngành phần mềm. 
 
 *Khởi động ngay từ hôm nay bằng cách tự động hóa chính những công việc nhàm chán nhất của bạn.*
+"""
+
+with open(post_dir / 'index.md', 'w') as f:
+    f.write(content)
+
+print(f"Content written. Word count: {len(content.split())}")
+
+# Run hugo
+print("Running hugo...")
+os.chdir('/home/ubuntu/banunu-blog')
+subprocess.run(['hugo'], check=True)
+print("Hugo build complete.")

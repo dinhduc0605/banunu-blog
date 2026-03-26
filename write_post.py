@@ -1,4 +1,7 @@
-+++
+import os
+import base64
+
+content = """+++
 title = 'Đầu Tư Hạ Tầng AI 2026: Làn Sóng Năng Lượng Hạt Nhân'
 date = 2026-03-23T23:00:00+00:00
 tags = ['AI', 'Investment', 'Data Center', 'Nuclear Energy', 'SMR']
@@ -11,7 +14,7 @@ Kỷ nguyên AI tạo sinh không chỉ là cuộc đua về thuật toán và m
 
 Sự trỗi dậy của các "siêu trung tâm dữ liệu" (Mega Data Center) đã thay đổi hoàn toàn cục diện bản đồ đầu tư. Các gã khổng lồ công nghệ (Big Tech) đang có những bước đi táo bạo, trong đó đáng chú ý nhất là làn sóng đổ vốn vào năng lượng hạt nhân.
 
-![Hero Image - Blueprint illustration of a mega data center integrated with a modular nuclear reactor, futuristic and precise](hero-v2.jpg)
+![Hero Image - Blueprint illustration of a mega data center integrated with a modular nuclear reactor, futuristic and precise](hero.jpg)
 
 ## 1. Timeline Đầu Tư Hạ Tầng AI (2023 - 2026)
 
@@ -30,7 +33,7 @@ Các động thái rõ rệt trong năm 2026:
 *   **Microsoft và Constellation Energy:** Thỏa thuận mở cửa trở lại nhà máy điện hạt nhân Three Mile Island là phát súng khởi đầu, biến năng lượng nguyên tử trở lại thành kênh đầu tư chiến lược. [CNBC Tech](https://www.cnbc.com/technology/) đưa tin các dự án tái vận hành nhà máy đang thu hút dòng vốn khổng lồ.
 *   **SMR (Lò phản ứng mô-đun nhỏ):** Thay vì xây dựng các nhà máy điện khổng lồ mất cả thập kỷ, các công ty như Kairos Power đang phát triển SMR – những lò phản ứng có thể lắp ráp nhanh chóng ngay cạnh cụm máy chủ AI. Google và Meta đều đang tích cực săn lùng các hợp đồng năng lượng dài hạn này.
 
-![In-body Image - Architectural sketch showing a power grid flowchart connecting a nuclear reactor directly to server racks](section-1-v2.jpg)
+![In-body Image - Architectural sketch showing a power grid flowchart connecting a nuclear reactor directly to server racks](section-1.jpg)
 
 ## 3. Ma Trận Quyết Định Đầu Tư Hạ Tầng AI (Cho Developer)
 
@@ -46,3 +49,9 @@ Là những người làm trong ngành, chúng ta có lợi thế thấu hiểu 
 ## Tổng kết
 
 Nhìn vào bức tranh hạ tầng năm 2026, chúng ta thấy rõ AI không chỉ là code, model hay API. Đằng sau những prompt nhanh chóng của Claude Code hay GPT-5.4 là sự chuyển mình dữ dội của cả một nền công nghiệp năng lượng nặng nề. Việc đa dạng hóa danh mục đầu tư sang các mảng năng lượng cơ bản, hạ tầng lưới điện và công nghệ hạt nhân SMR không chỉ là một xu thế, mà là sự phản ánh trực tiếp giới hạn vật lý của điện toán đám mây thời hiện đại.
+"""
+
+path = "/home/ubuntu/banunu-blog/content/posts/dau-tu-ha-tang-ai-nang-luong-hat-nhan-2026/index.md"
+with open(path, "w", encoding="utf-8") as f:
+    f.write(content)
+print("Saved index.md")
