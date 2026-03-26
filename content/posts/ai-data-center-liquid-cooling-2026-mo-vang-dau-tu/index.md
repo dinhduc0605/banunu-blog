@@ -1,6 +1,6 @@
 +++
 title = 'Tản nhiệt lỏng AI Data Center: Mỏ vàng đầu tư 2026'
-date = 2026-03-26T23:05:00+00:00
+date = 2026-03-26T22:50:00+00:00
 tags = ['AI', 'Infrastructure', 'Liquid Cooling', 'Investing']
 categories = ['Investment']
 description = 'Khi giới hạn tản nhiệt khí bị phá vỡ, tản nhiệt lỏng cho Data Center AI trở thành điểm nghẽn và cơ hội đầu tư hạ tầng tỷ đô không thể bỏ lỡ trong năm 2026.'
